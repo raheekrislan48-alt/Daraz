@@ -10,6 +10,9 @@
   display: block;
   clear: both;
 }
+body {
+  background-color: whitesmoke;
+}
 
 ul {
   padding: 0 650px;
@@ -24,6 +27,7 @@ li {
 #top_page {
   width: 100%;
   background-color: #fb7304;
+  height: 150px;
 }
 .search-bar {
   width: 100%;
@@ -33,11 +37,13 @@ li {
   position: relative;
   bottom: 55px;
   right: 33%;
+  border-color: #fb7304;
+  cursor: text;
 }
+
 .cart {
   position: relative;
-  left: 1040px;
-  bottom: 110px;
+  bottom: 100px;
   margin-right: 20px;
   display: flex;
 }
@@ -58,4 +64,82 @@ li {
 
 .image-button:hover img {
   transform: scale(1.05);
+}
+
+.heading {
+  margin-left: 10%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 40px;
+}
+.t_head {
+  margin-left: 10%;
+  box-shadow: black;
+  width: 1250px;
+  border-collapse: separate;
+  border-spacing: 0px 2px;
+}
+tr {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+td {
+  padding: 10px 40px;
+  font-size: 20px;
+  color: #fb7304;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+button {
+  margin-left: 70%;
+  border-radius: 3px;
+  border-color: #fb7304;
+  color: orangered;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-display: block;
+  height: 40px;
+  width: auto;
+}
+
+.flash-sale-table {
+  width: 1250px;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  margin-left: 10%;
+  box-shadow: black;
+  border-spacing: 0px 0px;
+}
+
+/* Ensure the header row spans full width without margin offsets */
+.flash-sale-table th {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 0px 0px;
+  font-weight: normal;
+}
+
+/* Align product images in table cells */
+.flash-sale-table td {
+  width: 0%;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0px 0px;
+}
+
+.flash-sale-table td img {
+  max-width: 100%;
+  max-height: 140px;
+  object-fit: contain;
+}
+p {
+  text-align: left;
+  margin-left: 30px;
+}
+
+.detail {
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
 }
